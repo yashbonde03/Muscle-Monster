@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cal.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cal.js"></script>
+    <title>Fitness Calculator</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Photos/logo.png" alt="">
+            <Div>Muscle Monsters            </Div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="Package.html"> Our Packages </a></li>
+                <li><a href="cal.html">Fitness Calculator</a> </li>
+                <li><a href="AboutUs.html">About Us</a> </li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <a class="btn" href="#popupcall">Call Us</a>
+            <a class="btn" href="#popupemail">Email Us</a>
+        </div>
+        
+        <div id="popupcall" class="overlay">
+            <div class="popup">
+                <h2>Call Us Now</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    +91-123456789
+                </div>
+            </div>
+        </div>
+        
+        <div id="popupemail" class="overlay">
+            <div class="popup">
+                <h2>Email Us Now</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>yashbonde123456@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+    	<h1>BMI Calculator</h1>
+    	<div class="BMI">
+        <p id="intro">Calculate your BMI (body mass index) by using the form below. Enter your weight and height and click the Calculate button to display your BMI result.</p>
+		<form action="none" method="post" name="bmiform">
+			<fieldset>
+			<legend>Height and Weight</legend>
+				<label for="pounds">Weight (pounds):</label>
+				<input type="text" name="pounds" id="pounds">
+				<br>
+				<label for="inches">Height (inches):</label>
+				<input type="text" name="inches" id="inches">
+				<br>
+				<button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()">Calculate your BMI</button>
+			</fieldset>
+			<fieldset>
+			<legend>BMI</legend>
+				<label for="bmi" id="bmi_label">Your calculated BMI is:</label>
+				<input type="text" name="bmi" id="bmi" readonly="readonly">
+			</fieldset>
+		</form>
+	</div>
+
+	<div class="Ideal weight">
+
+	</div>	
+    </div>
+
+</body>
+</html>

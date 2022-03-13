@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Monsters
+    </title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Photos/logo.png" alt="">
+            <Div>Muscle Monsters            </Div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="Package.html"> Our Packages </a></li>
+                <li><a href="cal.html">Fitness Calculator</a> </li>
+                <li><a href="AboutUs.html">About Us</a> </li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <a class="btn" href="#popupcall">Call Us</a>
+            <a class="btn" href="#popupemail">Email Us</a>
+        </div>
+        
+        <div id="popupcall" class="overlay">
+            <div class="popup">
+                <h2>Call Us Now</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    +91-123456789
+                </div>
+            </div>
+        </div>
+        
+        <div id="popupemail" class="overlay">
+            <div class="popup">
+                <h2>Email Us Now</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>yashbonde123456@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Nerul now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
